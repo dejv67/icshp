@@ -1,0 +1,7 @@
+C:\Users\David\Documents\UPce\3.rocnik\letni_semestr\ICSHP\c#git\Exersise01Solution\Grettings\obj\Debug\Grettings.csprojAssemblyReference.cache
+C:\Users\David\Documents\UPce\3.rocnik\letni_semestr\ICSHP\c#git\Exersise01Solution\Grettings\obj\Debug\Grettings.csproj.CoreCompileInputs.cache
+C:\Users\David\Documents\UPce\3.rocnik\letni_semestr\ICSHP\c#git\Exersise01Solution\Grettings\bin\Debug\Grettings.exe.config
+C:\Users\David\Documents\UPce\3.rocnik\letni_semestr\ICSHP\c#git\Exersise01Solution\Grettings\bin\Debug\Grettings.exe
+C:\Users\David\Documents\UPce\3.rocnik\letni_semestr\ICSHP\c#git\Exersise01Solution\Grettings\bin\Debug\Grettings.pdb
+C:\Users\David\Documents\UPce\3.rocnik\letni_semestr\ICSHP\c#git\Exersise01Solution\Grettings\obj\Debug\Grettings.exe
+C:\Users\David\Documents\UPce\3.rocnik\letni_semestr\ICSHP\c#git\Exersise01Solution\Grettings\obj\Debug\Grettings.pdb
