@@ -8,8 +8,8 @@ namespace Grettings
 {
     class Program
     {
-        /*
-         * prace se cvicicim
+        
+         // prace se cvicicim
          static uint DEFAULT_COUNT = 100;
          static uint GetCount(string[] args)
          {
@@ -35,25 +35,8 @@ namespace Grettings
              }
              grettings += "again!";
              Console.WriteLine(grettings);
-         }
-         }*/
-
-        class Address
-        {
-
-        }
-
-        class Person
-        {
-
-        }
-
-        
-
-        static void Main(string[] args)
-        {
             
-        }
+         }
 
     }
 }

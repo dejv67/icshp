@@ -1,0 +1,7 @@
+C:\Users\David\Documents\UPce\3.rocnik\letni_semestr\ICSHP\c#git\Exersise01Solution\cv01priklad01\bin\Debug\cv01priklad01.exe.config
+C:\Users\David\Documents\UPce\3.rocnik\letni_semestr\ICSHP\c#git\Exersise01Solution\cv01priklad01\bin\Debug\cv01priklad01.exe
+C:\Users\David\Documents\UPce\3.rocnik\letni_semestr\ICSHP\c#git\Exersise01Solution\cv01priklad01\bin\Debug\cv01priklad01.pdb
+C:\Users\David\Documents\UPce\3.rocnik\letni_semestr\ICSHP\c#git\Exersise01Solution\cv01priklad01\obj\Debug\cv01priklad01.csprojAssemblyReference.cache
+C:\Users\David\Documents\UPce\3.rocnik\letni_semestr\ICSHP\c#git\Exersise01Solution\cv01priklad01\obj\Debug\cv01priklad01.csproj.CoreCompileInputs.cache
+C:\Users\David\Documents\UPce\3.rocnik\letni_semestr\ICSHP\c#git\Exersise01Solution\cv01priklad01\obj\Debug\cv01priklad01.exe
+C:\Users\David\Documents\UPce\3.rocnik\letni_semestr\ICSHP\c#git\Exersise01Solution\cv01priklad01\obj\Debug\cv01priklad01.pdb
