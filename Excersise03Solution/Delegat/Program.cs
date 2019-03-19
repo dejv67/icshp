@@ -6,6 +6,12 @@ using System.Threading.Tasks;
 
 namespace Delegat
 {
+
+    public delegate void trideniJmena();
+    public delegate void trideniCisla();
+    public delegate void trideniFakulty();
+
+
     class Program
     {
         void vypisMenu()
@@ -20,8 +26,13 @@ namespace Delegat
 
         static void Main(string[] args)
         {
+
             Studenti st = new Studenti();
             Program pr = new Program();
+
+            trideniJmena delegatJmeno = new trideniJmena(st.seradDleJmena);
+            trideniCisla delegatCislo = new trideniCisla(st.seradDleCisla);
+            trideniFakulty delegatFakulta = new trideniFakulty(st.seradDleFakulty);
 
             int stiskKlavesa = -1;
 
@@ -41,13 +52,13 @@ namespace Delegat
                         st.vypisStudenty();
                         break;
                     case 3:
-                        st.seradDleCisla();
+                        delegatCislo();
                         break;
                     case 4:
-                        st.seradDleJmena();
+                        delegatJmeno();
                         break;
                     case 5:
-                        st.seradDleFakulty();
+                        delegatFakulta();
                         break;
                     case 0:
                         break;

@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessagesLibrary.Test", "Mes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageLogger", "MessageLogger\MessageLogger.csproj", "{B13F9BDE-F9E8-4254-BC14-233EB789ED3E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hra", "Hra\Hra.csproj", "{F34665F3-66CD-41F7-8F80-2B98FD39B099}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B13F9BDE-F9E8-4254-BC14-233EB789ED3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B13F9BDE-F9E8-4254-BC14-233EB789ED3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B13F9BDE-F9E8-4254-BC14-233EB789ED3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F34665F3-66CD-41F7-8F80-2B98FD39B099}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F34665F3-66CD-41F7-8F80-2B98FD39B099}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F34665F3-66CD-41F7-8F80-2B98FD39B099}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F34665F3-66CD-41F7-8F80-2B98FD39B099}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
