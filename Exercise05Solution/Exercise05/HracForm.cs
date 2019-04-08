@@ -18,13 +18,14 @@ namespace Exercise05
         {
             vysledekHrac = new Hrac();
             InitializeComponent();
+            InitializeHrac();
         }
 
-        private void InitializeFootballerUI()
+        private void InitializeHrac()
         {
-            textBoxJmeno.Text = vysledekHrac.;
-            comboBoxKlub.SelectedItem = vysledekHrac.Club;
-            textBoxGol.Text = vysledekHrac.GoalCount.ToString();
+            textBoxJmeno.Text = vysledekHrac.getJmeno();
+            comboBoxKlub.SelectedItem = vysledekHrac.getKlub();
+            textBoxGol.Text = vysledekHrac.getGolPocet().ToString();
         }
 
 
