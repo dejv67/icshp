@@ -36,7 +36,7 @@
             this.accurancyLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.difficultyLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.diffucultProgressBar = new System.Windows.Forms.ToolStripProgressBar();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Timer = new System.Windows.Forms.Timer(this.components);
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,8 +49,9 @@
             this.gameListBox.Location = new System.Drawing.Point(0, 0);
             this.gameListBox.MultiColumn = true;
             this.gameListBox.Name = "gameListBox";
-            this.gameListBox.Size = new System.Drawing.Size(738, 134);
+            this.gameListBox.Size = new System.Drawing.Size(738, 105);
             this.gameListBox.TabIndex = 0;
+            this.gameListBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.gameListBox_KeyDown);
             // 
             // statusStrip1
             // 
@@ -60,7 +61,7 @@
             this.accurancyLabel,
             this.difficultyLabel,
             this.diffucultProgressBar});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 112);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 83);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(738, 22);
             this.statusStrip1.TabIndex = 1;
@@ -71,6 +72,7 @@
             this.correctLabel.Name = "correctLabel";
             this.correctLabel.Size = new System.Drawing.Size(52, 17);
             this.correctLabel.Text = "Correct: ";
+            this.correctLabel.Click += new System.EventHandler(this.correctLabel_Click);
             // 
             // missedLabel
             // 
@@ -99,16 +101,17 @@
             this.diffucultProgressBar.Name = "diffucultProgressBar";
             this.diffucultProgressBar.Size = new System.Drawing.Size(100, 16);
             // 
-            // timer1
+            // Timer
             // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 800;
+            this.Timer.Enabled = true;
+            this.Timer.Interval = 800;
+            this.Timer.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(738, 134);
+            this.ClientSize = new System.Drawing.Size(738, 105);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.gameListBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -132,7 +135,7 @@
         private System.Windows.Forms.ToolStripStatusLabel accurancyLabel;
         private System.Windows.Forms.ToolStripStatusLabel difficultyLabel;
         private System.Windows.Forms.ToolStripProgressBar diffucultProgressBar;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer Timer;
     }
 }
 

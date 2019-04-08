@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Hra
 {
+    public delegate void UpdatedStatsEventHandler(object sender, EventArgs e);
+
     class Stats
     {
-        public delegate void UpdatedStatsEventHandler(object sender, EventArgs e);
-
         public int Correct { get; private set; }
         public int Missed { get; private set; }
         public int Accurancy { get; private set; }
@@ -23,9 +23,17 @@ namespace Hra
                 handler(this, new EventArgs());
         }
 
-        private void Update(bool correctKey)
+        public  void Update(bool correctKey)
         {
+            if (correctKey == true)
+            {
+                Correct++;
+            } else {
+                Missed++;
+            }
 
+            Accurancy = (Correct * 100) / (Correct + Missed);
+            OnUpdatedStats();
         }
 
 

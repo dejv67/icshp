@@ -12,6 +12,8 @@ namespace Exercise05
         FotbalovyKlub klub;
         int golPocet;
 
+        public Hrac() { }
+
         public void setJmeno(string jmeno)
         {
             this.jmeno = jmeno;
