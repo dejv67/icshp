@@ -14,12 +14,18 @@ namespace Exercise05
 
         public void vymaz(int index)
         {
-
+            for (int i = index; i < pocet; i++)
+            {
+                poleHracu[i] = poleHracu[i + 1];
+            }
+            poleHracu[pocet] = null;
+            pocet--;
         }
 
         public void pridej(Hrac hrac)
         {
-
+            poleHracu[pocet] = hrac;
+            pocet++;
         }
 
         //indexer

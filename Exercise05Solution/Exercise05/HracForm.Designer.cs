@@ -61,6 +61,7 @@
             this.btnOk.TabIndex = 3;
             this.btnOk.Text = "OK";
             this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
             // btnStorno
             // 
@@ -70,6 +71,7 @@
             this.btnStorno.TabIndex = 4;
             this.btnStorno.Text = "Storno";
             this.btnStorno.UseVisualStyleBackColor = true;
+            this.btnStorno.Click += new System.EventHandler(this.btnStorno_Click);
             // 
             // labelJmeno
             // 

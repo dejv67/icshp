@@ -12,20 +12,28 @@ namespace Exercise05
 {
     public partial class HracForm : Form
     {
-        Hrac vysledekHrac;
+        Hrac hrac;
 
         public HracForm()
         {
-            vysledekHrac = new Hrac();
+            hrac = new Hrac();
             InitializeComponent();
             InitializeHrac();
         }
 
+        public HracForm(Hrac hrac)
+        {
+            this.hrac = hrac;
+            InitializeComponent();
+            InitializeHrac();
+        }
+
+       
         private void InitializeHrac()
         {
-            textBoxJmeno.Text = vysledekHrac.getJmeno();
-            comboBoxKlub.SelectedItem = vysledekHrac.getKlub();
-            textBoxGol.Text = vysledekHrac.getGolPocet().ToString();
+            textBoxJmeno.Text = hrac.getJmeno();
+            comboBoxKlub.SelectedItem = hrac.getKlub();
+            textBoxGol.Text = hrac.getGolPocet().ToString();
         }
 
 
@@ -42,6 +50,25 @@ namespace Exercise05
         private void HracForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnOk_Click(object sender, EventArgs e)
+        {
+            hrac.setJmeno(textBoxJmeno.Text);
+            hrac.setKlub((FotbalovyKlub) comboBoxKlub.SelectedItem);
+            int pocetGolu;
+            int.TryParse(textBoxGol.Text, out pocetGolu);
+            hrac.setGolPocet(pocetGolu);
+        }
+
+        private void btnStorno_Click(object sender, EventArgs e)
+        {
+            if (sender is Form form && form.DialogResult == DialogResult.Cancel)
+                return;
+            if (textBoxJmeno.Text.Length == 0)
+            {
+               
+            }
         }
     }
 }
